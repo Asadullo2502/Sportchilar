@@ -1,0 +1,1011 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sport</title>
+    <link rel="stylesheet" href="./libs/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./styles/main.css">
+
+</head>
+
+<body>
+
+    <div class="fixed" id="modal">
+        <div class="kabinet-modal">
+            <div class="kabinet-modal-header">
+                <h3 class="kabinet-modal-header__h3">
+                    Kirish
+                </h3>
+
+
+                <a href="#" class="kabinet-modal-header__x">
+                    <img src="./images/icons/x.svg" alt="" id="iks">
+                </a>
+            </div>
+
+            <div class="kabinet-modal-body">
+                <form action="" class="kabinet-modal-body-form">
+
+                    <label for="name" class="kabinet-modal-body-form-label">
+                        Telefon raqamingiz
+                    </label>
+                    <input type="tel" id="name" class="kabinet-modal-body-form__number" placeholder="+998">
+
+                    <label for="parol" class="kabinet-modal-body-form-label">
+                        Parolingiz
+                    </label>
+                    <input type="password" id="parol" class="kabinet-modal-body-form__parol"
+                        placeholder="Parolni kiriting">
+
+                    <div class="kabinet-modal-body-form-buttonbox">
+                        <button class="kabinet-modal-body-form-buttonbox__btn" type="submit">
+                            Kirish
+                        </button>
+                    </div>
+                </form>
+
+                <div class="kabinet-modal-body-lamp">
+                    <a href="" class="kabinet-modal-body-lamp__links">
+                        Eslab qolish
+                    </a>
+                    <a href="" class="kabinet-modal-body-lamp__links">
+                        Parolni unutdingizmi ?
+                    </a>
+                </div>
+
+                <div class="kabinet-modal-body-or">
+                    <span>
+                        Yoki
+                    </span>
+                </div>
+
+                <div class="kabinet-modal-body-btn">
+                    <a href="#" class="kabinet-modal-body-btn__link">
+                        Ro‘yxatdan o‘tish
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+     
+        <div class="header-inner container">
+            <div class="header-inner-items">
+                <a href="#" class="header-inner-items-logo">
+                    <svg width="71" height="56" viewBox="0 0 71 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M37.5439 0.0737133C38.4729 -0.055975 39.4482 -0.0361249 40.3322 0.309269C41.8448 0.895513 43.0676 2.23607 43.4302 3.82806C43.7028 5.15934 43.5387 6.62165 42.7605 7.76105C41.6555 9.54492 39.3463 10.4382 37.3203 9.91943C35.6131 9.48802 34.1495 8.13688 33.6943 6.41918C33.0697 4.38783 33.9378 2.00713 35.715 0.847874C36.2788 0.498509 36.8836 0.186198 37.5439 0.0737133Z"
+                            fill="#64B431" />
+                        <path
+                            d="M24.4665 3.60971C24.7431 3.44072 25.0938 3.60707 25.3598 3.78175C26.5614 4.47254 27.5235 5.49284 28.5014 6.45756C29.92 7.86428 31.1891 9.41128 32.5906 10.8352C34.0648 12.1533 36.0366 12.938 38.0229 12.8957C40.2964 12.9076 42.4694 12.1136 44.5364 11.2388C47.6278 9.91415 50.5458 8.16865 53.7721 7.17085C54.3808 7.03851 55.114 6.74909 55.6671 7.23305C55.908 7.5431 55.6526 8.12498 55.3522 8.44391C54.4192 9.492 53.3936 10.4594 52.2847 11.3196C50.3221 12.8242 48.5634 14.5697 46.8033 16.302C45.3847 17.796 43.8589 19.2199 42.7208 20.9509C42.0525 22.2173 42.4813 23.7008 42.7684 25.0149C43.8404 29.0405 45.4575 32.9153 46.2687 37.0111C46.4751 38.1425 46.6829 39.2938 46.5598 40.4478C46.5347 40.6873 46.3905 41.0288 46.0953 40.9811C45.5964 40.9441 45.2682 40.4994 44.944 40.1686C43.9595 39.0424 43.2713 37.7058 42.4416 36.4698C41.1037 34.4239 39.861 32.2999 38.2611 30.4406C37.9475 30.0701 37.5783 29.73 37.1349 29.5249C36.7326 29.3184 36.2801 29.558 35.9704 29.82C35.0652 30.6338 34.5002 31.7309 33.8398 32.7353C33.0829 33.8827 32.4066 35.079 31.6748 36.2409C30.6664 37.7415 29.8354 39.3468 28.9434 40.9163C28.5213 41.6467 27.898 42.3203 27.0801 42.5956C26.662 42.7451 26.1406 42.6869 25.8441 42.3296C25.4021 41.8942 25.4683 41.2153 25.5464 40.6556C25.7409 39.7689 26.0717 38.9193 26.3377 38.0539C27.8265 33.3917 29.3722 28.6912 29.8314 23.7921C29.9399 22.7136 29.92 21.6271 29.887 20.5459C29.7096 18.504 29.0149 16.5534 28.2659 14.661C27.5155 12.8229 26.6911 11.0165 25.864 9.21145C25.2579 7.7915 24.5512 6.37816 24.3474 4.82852C24.2892 4.41828 24.19 3.77871 24.4665 3.60971Z"
+                            fill="#64B431" />
+                        <path
+                            d="M25.4498 44.7977C31.2288 43.9494 37.1204 43.9256 42.9167 44.6336C45.6639 45.0041 48.4059 45.4845 51.0778 46.2282C51.0381 47.046 50.9018 47.8572 50.9256 48.679C48.877 48.2212 46.8391 47.7024 44.7614 47.3901C38.5853 46.3738 32.2584 46.338 26.0598 47.1757C25.8415 46.387 25.6086 45.5996 25.4498 44.7977Z"
+                            fill="#64B431" />
+                        <path
+                            d="M17.4753 46.3923C17.7995 46.305 18.1304 46.2402 18.4652 46.2097C18.8555 46.9283 19.3227 47.6072 19.6416 48.3628C13.8731 49.8092 8.20656 51.834 3.05211 54.8313C2.48307 55.1609 1.6348 55.0206 1.33176 54.396C1.00092 53.8825 1.18751 53.1692 1.66789 52.8212C2.10459 52.5022 2.58497 52.2482 3.05741 51.9861C7.61634 49.5525 12.4863 47.7276 17.4753 46.3923Z"
+                            fill="#64B431" />
+                        <path
+                            d="M56.9164 48.0596C58.5349 48.5611 60.0792 49.281 61.6381 49.944C63.8508 50.9418 66.0092 52.0614 68.1146 53.2709C68.6095 53.5581 69.2394 53.8175 69.4022 54.4275C69.606 55.0614 69.1825 55.7734 68.5487 55.9401C68.0074 56.1519 67.5045 55.7509 67.0453 55.518C65.0537 54.3177 62.9588 53.2987 60.86 52.3022C59.0788 51.4659 57.2221 50.8095 55.4052 50.0605C55.9504 49.4266 56.4506 48.7543 56.9164 48.0596Z"
+                            fill="#64B431" />
+                        <path
+                            d="M13.324 15.2486C14.5177 15.0845 15.7801 15.4736 16.6085 16.3629C18.0364 17.7219 18.0907 20.1913 16.7872 21.651C15.5896 23.0709 13.3333 23.4004 11.7744 22.3947C10.8096 21.8111 10.1744 20.7709 9.98651 19.6699C9.6345 17.6174 11.2106 15.4167 13.324 15.2486Z"
+                            fill="#019FE3" />
+                        <path
+                            d="M22.4988 19.1273C23.0943 18.6006 23.658 17.9905 24.4136 17.698C24.6163 17.6196 24.8755 17.6005 24.9681 17.7748C25.2063 18.1299 24.714 19.8591 24.325 20.8251C23.2782 23.3037 22.0329 25.7043 21.1926 28.2663C20.7361 29.636 20.4661 31.0837 20.5429 32.5315C20.7506 37.4318 22.4763 42.0794 23.9372 46.7098C24.0735 47.2286 24.1715 47.8334 23.8843 48.3203C23.5892 48.7941 22.8891 48.7015 22.4577 48.4818C21.4229 47.9022 21.0338 46.7098 20.4582 45.7451C19.2446 43.7019 18.0139 41.6679 16.721 39.6736C16.3796 39.1945 16.0699 38.6533 15.5551 38.341C15.2322 38.198 14.8075 38.1875 14.5203 38.419C13.8798 38.8835 13.4391 39.5545 12.972 40.1804C11.5652 42.1112 10.3928 44.1981 9.04426 46.1673C8.63138 46.6609 7.87046 47.5744 7.50124 47.353C7.14261 47.1112 7.23392 46.5735 7.29083 46.1633C7.66004 42.0186 9.48362 38.2086 10.455 34.2015C10.6548 33.2262 10.889 32.0696 10.2234 31.2161C9.02971 29.5698 7.56609 28.1406 6.11569 26.7246C5.01334 25.6606 3.866 24.6403 2.66175 23.6915C1.77908 22.9517 0.852733 22.2265 0.188412 21.2724C0.0243162 21.058 -0.0696406 20.7766 0.0626918 20.5207C0.261194 20.2472 1.26429 20.3805 1.83333 20.5591C2.86819 20.8886 3.84747 21.3624 4.84131 21.7951C7.42316 22.9795 9.94282 24.4551 12.7788 24.9394C14.5481 25.2729 16.4603 24.8852 17.9213 23.8199C18.718 23.2535 19.3002 22.4555 19.9659 21.7515C20.8102 20.8767 21.5856 19.9345 22.4988 19.1273Z"
+                            fill="#019FE3" />
+                        <path
+                            d="M58.9783 16.9821C59.7683 16.9199 60.602 16.9159 61.3179 17.309C62.6082 17.9018 63.4829 19.2556 63.5068 20.6742C63.6669 22.7889 61.7255 24.8269 59.591 24.6787C58.4555 24.7435 57.3704 24.1493 56.6386 23.3117C55.4436 21.938 55.429 19.6963 56.628 18.32C57.2288 17.6332 58.0532 17.08 58.9783 16.9821Z"
+                            fill="#F99D04" />
+                        <path
+                            d="M69.6868 19.5877C69.9316 19.4302 70.3987 19.2546 70.5112 19.4712C70.6865 19.8088 70.4755 21.2194 70.1394 22.0253C69.0767 24.6455 67.7626 27.1625 66.8442 29.841C66.4551 31.0068 66.1243 32.219 66.1481 33.459C66.16 34.3258 66.1098 35.1979 66.25 36.0581C66.7886 40.0493 68.0564 43.8897 69.3109 47.7009C69.5518 48.4023 69.7212 49.1592 69.5611 49.8977C69.3705 50.2563 68.9219 50.5871 68.509 50.3899C67.7944 50.1782 67.2531 49.6039 66.8852 48.9779C65.8795 47.0975 64.7388 45.2964 63.6311 43.4768C62.8874 42.3678 62.2972 41.1344 61.3298 40.1949C61.0863 39.9011 60.6629 39.9368 60.3333 40.0241C59.8252 40.2875 59.4692 40.7507 59.1211 41.1887C58.7281 41.6876 58.306 42.1653 57.9659 42.7026C57.3452 43.7388 56.6624 44.7366 56.0325 45.7675C55.3377 46.8248 54.7528 47.9894 53.796 48.8429C53.5975 49.0467 53.1788 49.1401 53.0457 49.0362C52.7982 48.8429 52.8921 48 52.9318 47.4799C53.2428 44.5037 54.3386 41.6969 55.2001 38.8517C55.691 37.2729 56.3315 35.673 56.219 33.9883C56.2124 33.3148 55.7162 32.7987 55.3284 32.2984C54.2459 30.9155 52.9583 29.7139 51.7197 28.474C50.7682 27.5714 49.822 26.661 48.7871 25.8537C47.7681 25.0359 46.7756 24.1744 45.9181 23.1858C45.6839 22.9357 45.5198 22.4968 45.6058 22.2688C45.8506 21.8351 47.2666 22.196 48.0302 22.4858C49.245 22.8616 50.3487 23.5048 51.496 24.0394C53.7761 25.0875 56.0285 26.3434 58.5508 26.6954C60.598 27.0368 62.8093 26.395 64.2796 24.9128C65.1437 23.9706 65.951 22.9768 66.8654 22.0822C67.7626 21.2074 68.595 20.2308 69.6868 19.5877Z"
+                            fill="#F99D04" />
+                    </svg>
+
+                    <h3 class="header-inner-items-logo__name">
+                        Sport Bolalar <br>
+                        Nigohida
+                    </h3>
+                </a>
+            </div>
+
+
+            <div class="header-inner-items">
+                <a href="#" class="header-inner-items__link">
+                    <svg width="22" height="19" viewBox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M11.71 0.295898L11 1.0999L10.29 0.295898L0.203003 9.0979L0.500003 9.9999H3V17.9999C3 18.5519 3.448 18.9999 4 18.9999H8C8.552 18.9999 9 18.5519 9 17.9999V11.9999H13V17.9999C13 18.5519 13.448 18.9999 14 18.9999H18C18.552 18.9999 19 18.5519 19 17.9999V9.9999H21.5L21.797 9.0979L11.71 0.295898Z" />
+                    </svg>
+
+                </a>
+                <a href="#" class="header-inner-items__link">
+                    O‘yinlar
+                </a>
+                <a href="#" class="header-inner-items__link">
+                    Infografika
+                </a>
+                <a href="#" class="header-inner-items__link">
+                    Ota-onalar uchun
+                </a>
+                <a href="#" class="header-inner-items__link">
+                    To‘garaklar
+                </a>
+                <a href="#" class="header-inner-items__link">
+                    Videoblog
+                </a>
+                <a href="#" class="header-inner-items__link">
+                    Reyting
+                </a>
+            </div>
+
+
+            <div class="header-inner-items">
+                <a href="#" class="header-inner-items__language">O‘zb</a>
+
+                <a href="#" class="header-inner-items__btn modal-btn" id="modal-link">
+                    <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M10.5 0C4.9775 0 0.5 4.4775 0.5 10C0.5 15.5225 4.9775 20 10.5 20C16.0225 20 20.5 15.5225 20.5 10C20.5 4.4775 16.0225 0 10.5 0ZM4.66667 15.9508C5.63917 13.0342 8.55583 14.1725 9.04167 12.5925V11.5392C8.82333 11.4217 8.1975 10.615 8.13167 9.985C7.95917 9.97 7.68917 9.79917 7.60917 9.12333C7.56667 8.76083 7.73667 8.55667 7.83917 8.4925C7.83917 8.4925 7.5825 7.9075 7.5825 7.32667C7.58333 5.6 8.43833 4.16667 10.5 4.16667C11.6133 4.16667 11.9583 4.95583 11.9583 4.95583C12.9533 4.95583 13.4167 6.04667 13.4167 7.32583C13.4167 7.96333 13.16 8.49167 13.16 8.49167C13.2633 8.55583 13.4333 8.76 13.3908 9.1225C13.3108 9.79833 13.0408 9.96917 12.8683 9.98417C12.8025 10.6142 12.1775 11.4208 11.9583 11.5383V12.5917C12.4442 14.1725 15.3608 13.0342 16.3333 15.9508C16.3333 15.9508 14.1517 18.3333 10.5 18.3333C6.8275 18.3333 4.66667 15.9508 4.66667 15.9508Z" />
+                        <defs>
+                            <linearGradient id="paint0_linear" x1="0.296145" y1="-0.0516171" x2="3.70597" y2="14.5132"
+                                gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#FEA244" />
+                                <stop offset="1" stop-color="#FD9147" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+
+                    Kabinet
+                </a>
+            </div>
+        </div>
+    </header>
+
+
+
+    <section class="section1">
+        <div class="section1-inner container">
+            <div class="section1-inner-line1">
+                <h2 class="section1-inner-line1__h2">
+                    Sport Bolalar Nigohida
+                    portalida yangi o‘yinimizni qarshi oling!
+                </h2>
+
+                <div class="section1-inner-line1-links">
+                    <a href="#" class="section1-inner-line1-links__btn orange">
+                        O‘yinga o‘tish
+                    </a>
+
+                    <a href="#" class="section1-inner-line1-links__btn white">
+                        Batafsil
+                    </a>
+                </div>
+            </div>
+
+            <div class="section1-inner-line2">
+                <span class="section1-inner-line2__spans opacity"></span>
+                <span class="section1-inner-line2__spans"></span>
+                <span class="section1-inner-line2__spans long"></span>
+                <span class="section1-inner-line2__spans"></span>
+                <span class="section1-inner-line2__spans opacity"></span>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section2 container">
+        <div class="section2-inner">
+            <h3 class="section2-inner__h3">
+                Ota-onalar sahifasi
+            </h3>
+
+            <p class="section2-inner__p">
+                Ushbu sahifa ota-onalarni bolalar sporti dunyosi bilan tanishtiradi
+            </p>
+
+            <a href="#" class="section2-inner__link">
+                Sahifaga o‘tish
+            </a>
+        </div>
+    </section>
+
+    <section class="section3">
+        <div class="section3-inner container">
+            <div class="section3-inner-items">
+                <a href="#" class="section3-inner-items-video">
+                    <img src="./images/football.jpg" alt="" class="section3-inner-items-video__img">
+                    <div class="section3-inner-items-video-info">
+                        <div class="section3-inner-items-video-info-line1">
+                            <span class="section3-inner-items-video-info-line1__text">
+                                10/11/2017
+                            </span>
+
+                            <span class="section3-inner-items-video-info-line1__text">
+                                Futbol
+                            </span>
+                        </div>
+                        <div class="section3-inner-items-video-info-line2">
+                            <span class="section3-inner-items-video-info-line2__info">
+                                O‘smirlar o‘rtasida futbol chempionati o‘tkazildi
+                            </span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" class="section3-inner-items-video">
+                    <img src="./images/kuchsinash.jpg" alt="" class="section3-inner-items-video__img">
+                    <div class="section3-inner-items-video-info">
+                        <div class="section3-inner-items-video-info-line1">
+                            <span class="section3-inner-items-video-info-line1__text">
+                                10/11/2017
+                            </span>
+
+                            <span class="section3-inner-items-video-info-line1__text">
+                                Kuch sinashish
+                            </span>
+                        </div>
+                        <div class="section3-inner-items-video-info-line2">
+                            <span class="section3-inner-items-video-info-line2__info">
+                                Kuch sinashish bo‘yicha qaysi jamoa g‘olib bo‘ldi...
+                            </span>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+
+            <div class="section3-inner-items block">
+                <h3 class="section3-inner-items__h3">
+                    Videoblog
+                </h3>
+
+                <p class="section3-inner-items__p">
+                    Bolalar sportiga tegishli videolavhalar ushbu blogdan joy olgan.
+                </p>
+
+                <a href="#" class="section3-inner-items__link primary-link">
+                    Barcha videolar
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section4">
+        <div class="section4-inner container">
+            <a href="#" class="section4-inner-videos">
+                <img src="./images/baskeetball.jpg" alt="" class="section4-inner-videos__img">
+                <div class="section4-inner-videos-info">
+                    <div class="section4-inner-videos-info-line1">
+                        <span class="section4-inner-videos-info-line1__text">
+                            10/11/2017
+                        </span>
+                        <span class="section4-inner-videos-info-line1__text">
+                            Chempionat
+                        </span>
+                    </div>
+                    <div class="section4-inner-videos-info-line2">
+                        <span class="section4-inner-videos-info-line2__info">
+                            O‘smirlar o‘rtasida futbol chempionati o‘tkazildi
+                        </span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="section4-inner-videos big-block">
+                <img src="./images/ota.jpg" alt="" class="section4-inner-videos__img big">
+                <div class="section4-inner-videos-info">
+                    <div class="section4-inner-videos-info-line1 prezident">
+                        <span class="section4-inner-videos-info-line1__text data">
+                            10/11/2017
+                        </span>
+                        <span class="section4-inner-videos-info-line1__text data">
+                            Rasmiy
+                        </span>
+                    </div>
+                    <div class="section4-inner-videos-info-line1 big-info">
+                        <span class="section4-inner-videos-info-line2__info">
+                            Yurtboshimizning sportni rivojlantirish bo‘yicha navbatdagi yig‘ilishi
+                        </span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="section4-inner-videos">
+                <img src="./images/razminka.jpg" alt="" class="section4-inner-videos__img">
+                <div class="section4-inner-videos-info">
+                    <div class="section4-inner-videos-info-line1">
+                        <span class="section4-inner-videos-info-line1__text">
+                            10/11/2017
+                        </span>
+                        <span class="section4-inner-videos-info-line1__text">
+                            Ommaviy
+                        </span>
+                    </div>
+                    <div class="section4-inner-videos-info-line2">
+                        <span class="section4-inner-videos-info-line2__info">
+                            Kuch sinashish bo‘yicha qaysi jamoa g‘olib bo‘ldi...
+                        </span>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <section class="section5">
+        <div class="section5-info">
+            <div class="section5-info-inner container">
+                <h3 class="section5-info-inner__h3">
+                    O‘yinlar
+                </h3>
+            </div>
+        </div>
+
+        <div class="swiper-container section5-swiper">
+            
+            <div class="swiper-wrapper">
+                
+                <div class="swiper-slide">
+                    <a href="#" class="swiper-slide-link swiper-slide-link--blue">
+                        O‘ylab <br> toping
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#" class="swiper-slide-link swiper-slide-link--siyohrang">
+                        Ha <br> yoki <br> Yo`q
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#" class="swiper-slide-link swiper-slide-link--green">
+                        Sport <br> testi
+                    </a>
+                </div>
+
+            </div>
+            
+            <div class="swiper-pagination swiper-nuqta"></div>
+
+        </div>
+
+
+
+
+        </div>
+    </section>
+
+    <section class="section6">
+        <div class="section6-inner">
+            <div class="section6-inner-info container">
+                <h3 class="section6-inner-info__h3">
+                    Sport maslahatlari
+                </h3>
+
+                <p class="section6-inner-info__p">
+                    O‘zingizga qiziq bo’lgan sportga taaluqli barcha ma’lumotlarga ega bo‘ling.
+                </p>
+            </div>
+
+            <div class="swiper-container section6-inner-swiper">
+                
+                <div class="swiper-wrapper">
+                    
+                    <div class="swiper-slide">
+                        <div class="swiper-slide-inner">
+                            <h3 class="swiper-slide-inner__h3">
+                                Ertalabdan badantarbiya bilan shug‘ullanishni kanda qilmang
+                            </h3>
+
+                            <p class="swiper-slide-inner__p">
+                                Ertalabdan badantarbiya bilan shug‘ullanishni kanda qilmang badantarbiya badantarbiya
+                                bilan shug‘ullanishni kanda qilmang badantarbiya
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-slide-inner">
+                            <h3 class="swiper-slide-inner__h3">
+                                Mashq qilayotganingizda albatta yengil mashqlardan boshlang
+                            </h3>
+
+                            <p class="swiper-slide-inner__p">
+                                Ertalabdan badantarbiya bilan shug‘ullanishni kanda qilmang badantarbiya badantarbiya
+                                bilan shug‘ullanishni kanda qilmang badantarbiya
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-slide-inner">
+                            <h3 class="swiper-slide-inner__h3">
+                                Imkon qadar uy sharoitida tosh ko‘tarishdan yiroqroq bo‘ling
+                            </h3>
+
+                            <p class="swiper-slide-inner__p">
+                                Ertalabdan badantarbiya bilan shug‘ullanishni kanda qilmang badantarbiya badantarbiya
+                                bilan shug‘ullanishni kanda qilmang badantarbiya
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-slide-inner">
+                            <h3 class="swiper-slide-inner__h3">
+                                Ertalabdan badantarbiya bilan shug‘ullanishni kanda qilmang
+                            </h3>
+
+                            <p class="swiper-slide-inner__p">
+                                Ertalabdan badantarbiya bilan shug‘ullanishni kanda qilmang badantarbiya badantarbiya
+                                bilan shug‘ullanishni kanda qilmang badantarbiya
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="swiper-slide-inner">
+                            <h3 class="swiper-slide-inner__h3">
+                                Ertalabdan badantarbiya bilan shug‘ullanishni kanda qilmang
+                            </h3>
+
+                            <p class="swiper-slide-inner__p">
+                                Ertalabdan badantarbiya bilan shug‘ullanishni kanda qilmang badantarbiya badantarbiya
+                                bilan shug‘ullanishni kanda qilmang badantarbiya
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+                
+                <div class="swiper-pagination">
+
+                </div>
+
+                <div class="swiper-buttons">
+                    <a href="#" class="swiper-button-prev-my">
+                        <img src="./images/icons/next.svg" alt="">
+                    </a>
+                    <a href="#" class="swiper-button-next-my">
+                        <img src="./images/icons/next.svg" alt="">
+                    </a>
+                </div>
+
+
+
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="section7">
+        <div class="section7-inner container">
+            <div class="section7-inner-item">
+                <div class="section7-inner-item-block1">
+                    <h3 class="section7-inner-item-block1__h3">
+                        Hududingizdagi
+                        sport inshootlari
+                    </h3>
+
+
+
+                    <div class="section7-inner-item-block1-menu">
+                        <form action="viloyat" class="section7-inner-item-block1-menu-form">
+
+                            <select name="" id="viloyat" class="section7-inner-item-block1-menu-form-select">
+                                <option value="" class="section7-inner-item-block1-menu-select__items">Toshkent</option>
+                                <option value="" class="section7-inner-item-block1-menu-select__items">Andijon</option>
+                                <option value="" class="section7-inner-item-block1-menu-select__items">Buhoro</option>
+                                <option value="" class="section7-inner-item-block1-menu-select__items">Samarqand
+                                </option>
+
+                            </select>
+                            <div class="select-link">
+                                <img src="./images/icons/down.svg" alt="" class="select-img">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="section7-inner-item-block2">
+                    <div class="section7-inner-item-block2-items">
+
+
+                        <a href="#" class="section7-inner-item-block2-items__img">
+                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M18 3C9.71582 3 3 9.71582 3 18C3 26.2842 9.71582 33 18 33C26.2842 33 33 26.2842 33 18C32.9907 9.71973 26.2803 3.00928 18 3ZM18.5354 7.32446L23.75 5.23999C24.3418 5.50781 24.9143 5.81641 25.4634 6.16357L25.4771 6.17212C26.0166 6.51392 26.5322 6.89209 27.0205 7.30396L27.0625 7.34058C27.2815 7.5271 27.4944 7.72021 27.7014 7.91943C27.7275 7.94507 27.7549 7.96948 27.781 7.99561C27.998 8.20752 28.2083 8.42603 28.4116 8.65088C28.4285 8.66992 28.4446 8.68994 28.4614 8.70898C28.6399 8.90894 28.8115 9.11597 28.978 9.32642C29.0181 9.37646 29.0581 9.42651 29.0969 9.47656C29.2776 9.71045 29.4524 9.94849 29.6174 10.1941L28.5779 14.613L23.4634 16.3181L18.5366 12.376L18.5354 7.32446ZM6.90259 9.47949C6.94141 9.42944 6.98096 9.37939 7.021 9.32959C7.18555 9.12085 7.35571 8.91724 7.53149 8.71851C7.55054 8.69751 7.56812 8.67603 7.58691 8.65503C7.78906 8.42969 7.99829 8.21143 8.21509 8C8.23999 7.97559 8.26489 7.94995 8.29102 7.92749C8.49634 7.72949 8.70752 7.5376 8.92456 7.35205L8.97461 7.31006C9.4585 6.90112 9.96924 6.52539 10.5034 6.18506L10.5229 6.17261C11.0688 5.82617 11.6377 5.51807 12.2261 5.25L17.4646 7.32446V12.3745L12.5376 16.3159L7.4231 14.614L6.38354 10.1951C6.55005 9.94995 6.7229 9.7124 6.90259 9.47949ZM6.30005 25.6726C6.15308 25.4485 6.01245 25.2202 5.87842 24.9875L5.84595 24.9314C5.71265 24.7 5.58643 24.4646 5.46753 24.2256L5.46338 24.218C5.21289 23.7151 4.99292 23.1975 4.80493 22.668V22.6631C4.71606 22.4131 4.63501 22.157 4.56006 21.8994L4.53296 21.8044C4.46436 21.5625 4.4021 21.3179 4.34644 21.0706C4.34155 21.0464 4.33545 21.0234 4.33057 20.9995C4.20776 20.4409 4.11963 19.8755 4.06641 19.3059L7.1189 15.6431L12.198 17.3359L13.6721 23.2319L11.25 26.4546L6.30005 25.6726ZM21.3296 31.5964C21.0796 31.6584 20.823 31.7119 20.5664 31.76C20.5305 31.7671 20.4939 31.7729 20.458 31.7795C20.2395 31.8186 20.0186 31.8521 19.7971 31.8794C19.738 31.887 19.6794 31.895 19.6206 31.9021C19.415 31.926 19.2075 31.9441 18.9995 31.959C18.9341 31.9634 18.8694 31.97 18.804 31.9741C18.5381 31.9905 18.27 32 18 32C17.7527 32 17.5068 31.9934 17.2625 31.9805C17.2329 31.9805 17.2046 31.9756 17.175 31.9734C16.9575 31.9609 16.741 31.9446 16.5249 31.9236L16.5 31.9189C16.0266 31.8677 15.5559 31.7925 15.0901 31.6941L12.1326 27.0635L14.5166 23.8845H21.4834L23.9065 27.0845L21.3296 31.5964ZM31.6731 21C31.668 21.0239 31.6621 21.0471 31.657 21.071C31.6011 21.3181 31.5388 21.5627 31.4705 21.8049L31.4436 21.8999C31.3684 22.1575 31.2876 22.4126 31.1985 22.6636V22.6685C31.0105 23.198 30.7908 23.7156 30.54 24.2185L30.5359 24.2261C30.4163 24.4653 30.2903 24.7007 30.1575 24.9319L30.125 24.988C29.9917 25.2214 29.8513 25.4492 29.7041 25.6721L24.771 26.45L22.332 23.23L23.8054 17.3354L28.8845 15.6426L31.937 19.3054C31.884 19.8752 31.7959 20.4412 31.6731 21Z" />
+                            </svg>
+
+                        </a>
+
+
+                        <a href="#" class="section7-inner-item-block2-items__info">
+                            Futbol
+                            maydonlari
+                        </a>
+                    </div>
+                    <div class="section7-inner-item-block2-items">
+                        <a href="#" class="section7-inner-item-block2-items__img">
+                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0)">
+                                    <path
+                                        d="M33.0158 2.98541C28.2683 -1.76208 20.1327 -0.538507 15.1172 4.47694C7.64975 11.9443 13.4783 16.7126 6.8652 24.5645L11.4367 29.136C19.2888 22.5228 24.0567 28.3516 31.5243 20.8841C36.5738 15.8344 37.7345 7.70407 33.0158 2.98541ZM31.5243 4.47694C32.3096 5.2624 32.8863 6.18757 33.2829 7.19297L29.2869 11.189L24.8122 6.71428L28.8082 2.71829C29.8136 3.11492 30.7388 3.69163 31.5243 4.47694ZM27.7953 12.6805L23.3208 17.1552L18.8461 12.6805L23.3208 8.20596L27.7953 12.6805ZM26.4082 2.13533L23.3207 5.22282L21.0784 2.98056C22.8483 2.25739 24.6856 1.96475 26.4082 2.13533ZM16.6087 5.96862C17.385 5.19216 18.2282 4.53812 19.1062 3.99144L21.8291 6.71428L17.3546 11.189L14.6316 8.46598C15.1782 7.58799 15.8324 6.74494 16.6087 5.96862ZM13.6206 10.4382L15.8629 12.6805L12.7754 15.7681C12.6049 14.0453 12.8974 12.208 13.6206 10.4382ZM13.5002 25.2334L10.7679 22.501C11.2076 21.6623 11.5509 20.7954 11.848 19.9196C12.3105 20.8104 12.8926 21.6427 13.6257 22.3757C14.3586 23.1087 15.191 23.6908 16.0818 24.1534C15.2059 24.4503 14.3391 24.7937 13.5002 25.2334ZM15.1172 20.8841C14.3319 20.0987 13.755 19.1734 13.3584 18.1682L17.3546 14.172L21.8291 18.6467L17.8331 22.6428C16.8277 22.2462 15.9025 21.6694 15.1172 20.8841ZM20.2331 23.2258L23.3207 20.1383L25.563 22.3805C23.7932 23.1037 21.9559 23.3962 20.2331 23.2258ZM30.0327 19.3925C29.2563 20.1688 28.4133 20.823 27.5352 21.3697L24.8122 18.6467L29.2869 14.172L32.0098 16.895C31.4632 17.773 30.809 18.6162 30.0327 19.3925ZM30.7785 12.6805L33.8659 9.59301C34.0365 11.3157 33.7439 13.153 33.0207 14.9228L30.7785 12.6805Z" />
+                                    <path
+                                        d="M5.42208 26.1045L0.925389 30.6001C-0.308382 31.8339 -0.308382 33.841 0.925389 35.0748C2.15916 36.3084 4.1663 36.3084 5.40007 35.0748L9.89675 30.5792L5.42208 26.1045Z" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0">
+                                        <rect width="36" height="36" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+
+                        </a>
+                        <a href="#" class="section7-inner-item-block2-items__info">
+                            Tennis
+                            kortlari
+                        </a>
+                    </div>
+                    <div class="section7-inner-item-block2-items">
+                        <a href="#" class="section7-inner-item-block2-items__img">
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M26.0405 20.2082C24.8578 19.2842 23.1412 19.2843 21.9586 20.2082C21.4119 20.6353 20.5874 20.6352 20.0408 20.2082C19.5101 19.7935 18.8718 19.5656 18.2225 19.5231V10.5053L29.9985 10.5154L30 8.75767L26.6596 8.7548V5.39233C26.6596 2.58161 24.3729 0.294922 21.5621 0.294922C18.7514 0.294922 16.4647 2.58161 16.4647 5.39233V8.73201H13.5352V5.39233C13.5352 2.58161 11.2485 0.294922 8.43779 0.294922C5.62707 0.294922 3.34038 2.58161 3.34038 5.39233V8.73201C3.34038 8.73787 3.49928 8.735 0.00146477 8.73201L0 10.4897L3.34044 10.4926V20.4918C2.89369 20.5866 2.40609 20.4928 2.04178 20.2082C1.46776 19.7597 0.742932 19.5127 0.000761682 19.5127V21.2705C0.352659 21.2705 0.69313 21.3851 0.959602 21.5933C2.14232 22.5172 3.85897 22.5172 5.04157 21.5933C5.58828 21.1662 6.41271 21.1662 6.95931 21.5933C8.14202 22.5172 9.85868 22.5172 11.0413 21.5932C11.5879 21.1662 12.4124 21.1662 12.959 21.5932C14.1416 22.5172 15.8583 22.5172 17.0409 21.5932C17.5876 21.1661 18.4121 21.1662 18.9587 21.5932C20.1414 22.5172 21.858 22.5172 23.0406 21.5932C23.5873 21.1662 24.4117 21.1661 24.9584 21.5932C26.141 22.5172 27.8577 22.5171 29.0404 21.5932C29.3068 21.385 29.6473 21.2704 29.9992 21.2704V19.5127C29.2569 19.5127 28.5321 19.7596 27.9582 20.2081C27.4116 20.6353 26.5871 20.6352 26.0405 20.2082ZM5.09817 14.2396H16.4648V16.2316H5.09817V14.2396ZM18.2225 5.39233C18.2225 3.55082 19.7207 2.05265 21.5622 2.05265C23.4037 2.05265 24.9019 3.55082 24.9019 5.39233V8.73201H18.2225V5.39233ZM5.09817 5.39233C5.09817 3.55082 6.59634 2.05265 8.43785 2.05265C10.2794 2.05265 11.7775 3.55082 11.7775 5.39233V8.73201H5.09817V5.39233ZM16.4648 10.5039V12.4819H5.09817V10.4941L16.4648 10.5039ZM14.0411 20.2082C12.8584 19.2842 11.1418 19.2843 9.95916 20.2082C9.41245 20.6353 8.58802 20.6352 8.04142 20.2082C7.20205 19.5523 6.09375 19.3626 5.09817 19.6377V17.9894H16.4648V19.885C16.2883 19.9761 16.1186 20.0834 15.9589 20.2082C15.4122 20.6353 14.5878 20.6352 14.0411 20.2082Z" />
+                                <path
+                                    d="M26.0405 23.9578C24.8578 23.0339 23.1411 23.0339 21.9585 23.9578C21.4118 24.3849 20.5874 24.3849 20.0408 23.9578C18.8582 23.0338 17.1414 23.0339 15.9588 23.9578C15.4122 24.3849 14.5878 24.3849 14.0411 23.9577C12.8584 23.0338 11.1418 23.0339 9.95918 23.9577C9.41247 24.3849 8.58803 24.3848 8.04144 23.9577C6.85884 23.0338 5.14207 23.0338 3.95947 23.9577C3.41282 24.3848 2.58833 24.3848 2.04179 23.9577C1.46778 23.5093 0.742949 23.2623 0.000778198 23.2623V25.0201C0.352675 25.0201 0.693147 25.1347 0.959618 25.3429C2.14233 26.2668 3.85899 26.2667 5.04159 25.3429C5.5883 24.9158 6.41273 24.9158 6.95933 25.3429C8.14204 26.2668 9.8587 26.2668 11.0413 25.3428C11.5879 24.9158 12.4124 24.9158 12.959 25.3428C14.1416 26.2668 15.8583 26.2667 17.0409 25.3428C17.5877 24.9157 18.4121 24.9158 18.9587 25.3428C20.1414 26.2667 21.8581 26.2667 23.0407 25.3428C23.5873 24.9158 24.4117 24.9157 24.9584 25.3428C26.141 26.2667 27.8577 26.2667 29.0404 25.3428C29.3068 25.1346 29.6473 25.02 29.9992 25.02V23.2623C29.257 23.2623 28.5321 23.5092 27.9582 23.9577C27.4116 24.3849 26.5871 24.3849 26.0405 23.9578Z" />
+                                <path
+                                    d="M26.0405 27.6269C24.8578 26.7029 23.1411 26.703 21.9585 27.6269C21.4118 28.054 20.5874 28.0539 20.0408 27.6269C18.8582 26.7029 17.1414 26.7029 15.9588 27.6269C15.4122 28.054 14.5878 28.0539 14.0411 27.6268C12.8584 26.7029 11.1418 26.7029 9.95918 27.6268C9.41247 28.0539 8.58803 28.0539 8.04144 27.6268C6.85884 26.7028 5.14207 26.7029 3.95947 27.6268C3.41288 28.0539 2.58839 28.0539 2.04179 27.6268C1.46778 27.1784 0.742949 26.9314 0.000778198 26.9314V28.6891C0.352675 28.6891 0.693147 28.8038 0.959618 29.012C2.14233 29.9359 3.85899 29.9358 5.04159 29.012C5.5883 28.5848 6.41273 28.5849 6.95933 29.012C8.14204 29.9359 9.8587 29.9358 11.0413 29.0119C11.5879 28.5849 12.4124 28.5848 12.959 29.0119C14.1416 29.9359 15.8583 29.9358 17.0409 29.0119C17.5877 28.5848 18.4121 28.5848 18.9587 29.0119C20.1414 29.9358 21.8581 29.9358 23.0407 29.0118C23.5873 28.5848 24.4117 28.5848 24.9584 29.0118C26.141 29.9358 27.8577 29.9358 29.0404 29.0118C29.3068 28.8037 29.6473 28.6891 29.9992 28.6891V26.9313C29.257 26.9313 28.5321 27.1783 27.9582 27.6267C27.4116 28.054 26.5871 28.054 26.0405 27.6269Z" />
+                            </svg>
+
+                        </a>
+                        <a href="#" class="section7-inner-item-block2-items__info">
+                            Suzish
+                            havzalari
+                        </a>
+                    </div>
+                    <div class="section7-inner-item-block2-items">
+                        <a href="#" class="section7-inner-item-block2-items__img">
+                            <svg width="29" height="31" viewBox="0 0 29 31" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M21.2888 0.154443C22.2162 0.0412403 23.183 0.375928 23.8601 1.01718C24.3987 1.5396 24.7707 2.24554 24.8438 2.99647C24.9598 3.95976 24.6082 4.96874 23.91 5.64444C23.2934 6.2646 22.4138 6.61405 21.5398 6.57468C20.4464 6.5571 19.3981 5.91937 18.8567 4.97226C18.4067 4.22905 18.3202 3.29741 18.5452 2.46632C18.8834 1.23655 20.0189 0.278193 21.2888 0.154443Z" />
+                                <path
+                                    d="M11.033 5.15777C11.3663 5.07762 11.6961 5.19996 12.0202 5.26254C13.7619 5.64012 15.5021 6.02121 17.243 6.39949C17.4174 6.43254 17.5834 6.49934 17.7373 6.58723C18.3083 6.90996 18.8778 7.23481 19.4544 7.54699C19.9691 7.81629 20.3579 8.31129 20.5048 8.87238C20.6384 9.40535 20.5773 9.98895 20.3108 10.472C19.1928 12.6777 18.0755 14.8841 16.9604 17.0912C18.2323 18.2007 19.4937 19.3229 20.7523 20.4479C21.1524 20.7735 21.3739 21.3163 21.2741 21.8275C20.8297 24.1639 20.3867 26.5011 19.9416 28.8383C19.8769 29.1596 19.8411 29.4915 19.7138 29.7967C19.4663 30.3332 18.9551 30.7494 18.3659 30.8408C17.5201 31.0061 16.6159 30.4471 16.3662 29.6265C16.2263 29.2447 16.2734 28.8299 16.3634 28.4432C16.76 26.4491 17.1334 24.4501 17.5348 22.4575C15.7552 21.3507 13.9679 20.2567 12.1855 19.1549C11.514 18.8265 10.9824 18.2317 10.7314 17.5279C10.4635 16.7769 10.5198 15.9057 10.9128 15.2089C12.1482 13.1945 13.3899 11.1843 14.619 9.16559C13.5791 8.82246 12.5314 8.50395 11.4908 8.16293C10.0367 9.20566 8.58757 10.2547 7.13281 11.2968C6.7707 11.5745 6.2757 11.6434 5.84398 11.5098C5.32085 11.3418 4.90882 10.8552 4.86382 10.3025C4.80405 9.8209 5.00726 9.31324 5.39538 9.01793C6.99851 7.87395 8.59741 6.72363 10.1977 5.57473C10.4473 5.3877 10.7173 5.20488 11.033 5.15777Z" />
+                                <path
+                                    d="M19.827 14.5446C20.3663 13.4878 20.9084 12.4324 21.4365 11.3707C21.8668 12.3825 22.2922 13.3957 22.7127 14.4117C23.9389 14.4139 25.1659 14.4124 26.3921 14.4124C26.7563 14.4153 27.1311 14.3829 27.482 14.5017C28.0599 14.7092 28.4839 15.3117 28.4291 15.9326C28.4213 16.6913 27.7091 17.322 26.9609 17.2988C25.4366 17.2988 23.9115 17.2974 22.3871 17.2995C22.0461 17.3037 21.6861 17.3114 21.376 17.1497C21.0667 17.0049 20.8269 16.7398 20.6842 16.4332C20.398 15.8039 20.1118 15.1746 19.827 14.5446Z" />
+                                <path
+                                    d="M7.87668 20.8552C8.43355 20.0072 8.94754 19.1304 9.52199 18.2951C9.87918 19.1023 10.4923 19.7921 11.2531 20.2399C11.6208 20.4572 11.9759 20.6963 12.3478 20.9079C11.8282 21.687 11.2664 22.4372 10.7328 23.2057C10.2336 23.9173 9.40808 24.3933 8.53691 24.4306C6.44722 24.4313 4.35824 24.4299 2.26925 24.4313C1.45996 24.4137 0.721676 23.764 0.593004 22.9653C0.441129 22.2073 0.850348 21.3776 1.54855 21.045C1.79113 20.9206 2.06113 20.8439 2.33535 20.8538C4.18246 20.8566 6.02957 20.8524 7.87668 20.8552Z" />
+                            </svg>
+
+                        </a>
+                        <a href="#" class="section7-inner-item-block2-items__info">
+                            Gimnastika
+                            komplekslari
+                        </a>
+                    </div>
+                    <div class="section7-inner-item-block2-items">
+                        <a href="#" class="section7-inner-item-block2-items__img">
+                            <svg width="29" height="31" viewBox="0 0 29 31" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M21.2888 0.154443C22.2162 0.0412403 23.183 0.375928 23.8601 1.01718C24.3987 1.5396 24.7707 2.24554 24.8438 2.99647C24.9598 3.95976 24.6082 4.96874 23.91 5.64444C23.2934 6.2646 22.4138 6.61405 21.5398 6.57468C20.4464 6.5571 19.3981 5.91937 18.8567 4.97226C18.4067 4.22905 18.3202 3.29741 18.5452 2.46632C18.8834 1.23655 20.0189 0.278193 21.2888 0.154443Z" />
+                                <path
+                                    d="M11.033 5.15777C11.3663 5.07762 11.6961 5.19996 12.0202 5.26254C13.7619 5.64012 15.5021 6.02121 17.243 6.39949C17.4174 6.43254 17.5834 6.49934 17.7373 6.58723C18.3083 6.90996 18.8778 7.23481 19.4544 7.54699C19.9691 7.81629 20.3579 8.31129 20.5048 8.87238C20.6384 9.40535 20.5773 9.98895 20.3108 10.472C19.1928 12.6777 18.0755 14.8841 16.9604 17.0912C18.2323 18.2007 19.4937 19.3229 20.7523 20.4479C21.1524 20.7735 21.3739 21.3163 21.2741 21.8275C20.8297 24.1639 20.3867 26.5011 19.9416 28.8383C19.8769 29.1596 19.8411 29.4915 19.7138 29.7967C19.4663 30.3332 18.9551 30.7494 18.3659 30.8408C17.5201 31.0061 16.6159 30.4471 16.3662 29.6265C16.2263 29.2447 16.2734 28.8299 16.3634 28.4432C16.76 26.4491 17.1334 24.4501 17.5348 22.4575C15.7552 21.3507 13.9679 20.2567 12.1855 19.1549C11.514 18.8265 10.9824 18.2317 10.7314 17.5279C10.4635 16.7769 10.5198 15.9057 10.9128 15.2089C12.1482 13.1945 13.3899 11.1843 14.619 9.16559C13.5791 8.82246 12.5314 8.50395 11.4908 8.16293C10.0367 9.20566 8.58757 10.2547 7.13281 11.2968C6.7707 11.5745 6.2757 11.6434 5.84398 11.5098C5.32085 11.3418 4.90882 10.8552 4.86382 10.3025C4.80405 9.8209 5.00726 9.31324 5.39538 9.01793C6.99851 7.87395 8.59741 6.72363 10.1977 5.57473C10.4473 5.3877 10.7173 5.20488 11.033 5.15777Z" />
+                                <path
+                                    d="M19.827 14.5446C20.3663 13.4878 20.9084 12.4324 21.4365 11.3707C21.8668 12.3825 22.2922 13.3957 22.7127 14.4117C23.9389 14.4139 25.1659 14.4124 26.3921 14.4124C26.7563 14.4153 27.1311 14.3829 27.482 14.5017C28.0599 14.7092 28.4839 15.3117 28.4291 15.9326C28.4213 16.6913 27.7091 17.322 26.9609 17.2988C25.4366 17.2988 23.9115 17.2974 22.3871 17.2995C22.0461 17.3037 21.6861 17.3114 21.376 17.1497C21.0667 17.0049 20.8269 16.7398 20.6842 16.4332C20.398 15.8039 20.1118 15.1746 19.827 14.5446Z" />
+                                <path
+                                    d="M7.87668 20.8552C8.43355 20.0072 8.94754 19.1304 9.52199 18.2951C9.87918 19.1023 10.4923 19.7921 11.2531 20.2399C11.6208 20.4572 11.9759 20.6963 12.3478 20.9079C11.8282 21.687 11.2664 22.4372 10.7328 23.2057C10.2336 23.9173 9.40808 24.3933 8.53691 24.4306C6.44722 24.4313 4.35824 24.4299 2.26925 24.4313C1.45996 24.4137 0.721676 23.764 0.593004 22.9653C0.441129 22.2073 0.850348 21.3776 1.54855 21.045C1.79113 20.9206 2.06113 20.8439 2.33535 20.8538C4.18246 20.8566 6.02957 20.8524 7.87668 20.8552Z" />
+                            </svg>
+
+                        </a>
+                        <a href="#" class="section7-inner-item-block2-items__info">
+                            Yugurish
+                            maydonlari
+                        </a>
+                    </div>
+                    <div class="section7-inner-item-block2-items">
+                        <a href="#" class="section7-inner-item-block2-items__img">
+                            <svg width="34" height="34" viewBox="0 0 34 34" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M26.0069 15.5834L19.3911 8.96759C18.8366 8.4131 18.8317 7.51896 19.3888 6.96186C19.9421 6.40862 20.8362 6.40573 21.3879 6.95743L30.4123 15.9819C30.9631 16.5327 30.964 17.4248 30.4123 17.9765L21.3879 27.001C20.8371 27.5518 19.9459 27.5537 19.3888 26.9966C18.8356 26.4433 18.8384 25.5435 19.3934 24.9885L25.9652 18.4167H7.07783C6.29842 18.4167 5.66658 17.7879 5.66658 17.0001C5.66658 16.2177 6.29763 15.5834 7.08073 15.5834H26.0069Z" />
+                            </svg>
+
+                        </a>
+                        <a href="#" class="section7-inner-item-block2-items__info">
+                            Boshqa
+                        </a>
+                    </div>
+                </div>
+
+                <div class="section7-inner-item-block3">
+                    <div class="section7-inner-item-block3-left">
+                        <span class="section7-inner-item-block3-left__number">
+                            27
+                        </span>
+                        <div class="section7-inner-item-block3-left-info">
+                            <span class="section7-inner-item-block3-left-info__span--grey">
+                                ta
+                            </span>
+                            <p class="section7-inner-item-block3-left-info__p--blue">
+                                Suzish havzalari mavjud
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="section7-inner-item-block3-right">
+                        <a href="#" class="section7-inner-item-block3-right__btn primary-link">
+                            Batafsil ko‘rish
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section8">
+        <div class="section8-inner container">
+            <div class="section8-inner-item">
+                <div class="section8-inner-item-line1">
+                    <h3 class="section8-inner-item-line1__h3">
+                        Top-3 foydalanuvchi
+                    </h3>
+
+                    <a href="#" class="section8-inner-item-line1__links primary-link">
+                        Barcha sportchilar
+                    </a>
+                </div>
+
+                <div class="section8-inner-item-line2">
+                    <div class="section8-inner-item-line2-blocks">
+                        <a href="#" class="section8-inner-item-line2-blocks-column">
+                            <img src="./images/meliqozi.png" alt=""
+                                class="section8-inner-item-line2-blocks-column__img">
+                            <p class="section8-inner-item-line2-blocks-column__info">
+                                Mirzakhalilova Madina <br>
+                                <span>sport lug‘ati</span>
+                            </p>
+                        </a>
+                        <div class="section8-inner-item-line2-blocks-column">
+                            <a href="#" class="section8-inner-item-line2-blocks-column__like">
+                                2,365
+                            </a>
+
+                            <a href="#" class="section8-inner-item-line2-blocks-column__play">
+                                2,365
+                            </a>
+                        </div>
+                        <div class="section8-inner-item-line2-blocks-column">
+                            <img src="./images/icons/1-orin.svg" alt=""
+                                class="section8-inner-item-line2-blocks-column__medal">
+                        </div>
+                    </div>
+
+                    <div class="section8-inner-item-line2-blocks">
+                        <a href="#" class="section8-inner-item-line2-blocks-column">
+                            <img src="./images/fazlidin.png" alt=""
+                                class="section8-inner-item-line2-blocks-column__img">
+                            <p class="section8-inner-item-line2-blocks-column__info">
+                                Abdullayev Abdubakir <br>
+                                <span>futbol</span>
+                            </p>
+                        </a>
+                        <div class="section8-inner-item-line2-blocks-column">
+                            <a href="#" class="section8-inner-item-line2-blocks-column__like">
+                                1,965
+                            </a>
+
+                            <a href="#" class="section8-inner-item-line2-blocks-column__play">
+                                2,263
+
+                            </a>
+                        </div>
+                        <div class="section8-inner-item-line2-blocks-column">
+                            <img src="./images/icons/2-orin.svg" alt=""
+                                class="section8-inner-item-line2-blocks-column__medal">
+                        </div>
+                    </div>
+
+                    <div class="section8-inner-item-line2-blocks">
+                        <a href="#" class="section8-inner-item-line2-blocks-column">
+                            <img src="./images/bektemir.png" alt=""
+                                class="section8-inner-item-line2-blocks-column__img">
+                            <p class="section8-inner-item-line2-blocks-column__info">
+                                Ubaydullayev Odiljon <br>
+                                <span>ha yoki yo‘q</span>
+                            </p>
+                        </a>
+                        <div class="section8-inner-item-line2-blocks-column">
+                            <a href="#" class="section8-inner-item-line2-blocks-column__like">
+                                1,022
+                            </a>
+
+                            <a href="#" class="section8-inner-item-line2-blocks-column__play">
+                                2,001
+
+                            </a>
+                        </div>
+                        <div class="section8-inner-item-line2-blocks-column">
+                            <img src="./images/icons/3-orin.svg" alt=""
+                                class="section8-inner-item-line2-blocks-column__medal">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section9">
+        <div class="section9-info container">
+            <h3 class="section9-info__h3">
+                Mashhur sportchilar
+            </h3>
+
+            <a href="#" class="section9-info__link primary-link">
+                Barcha sportchilar
+            </a>
+        </div>
+
+        <div class="swiper-container section9-swiper">
+            
+            <div class="swiper-wrapper">
+                
+                <div class="swiper-slide">
+                    
+                    <h3 class="swiper-slide__h3">
+                        Bektemir Melqo‘ziyev
+                    </h3>
+
+                    <p class="swiper-slide__p">
+                        Boks - Rio de Janeiro - 2004 oltin
+                    </p>
+                </div>
+                <div class="swiper-slide">
+                    
+                    <h3 class="swiper-slide__h3">
+                        Ruslan Nuriddinov
+                    </h3>
+
+                    <p class="swiper-slide__p">
+                        Og‘ir atletika - Rio de Janeiro - 2016 oltin
+                    </p>
+                </div>
+                <div class="swiper-slide">
+                    
+                    <h3 class="swiper-slide__h3">
+                        ARTUR TAYMAZOV
+                    </h3>
+
+                    <p class="swiper-slide__p">
+                        Erkin kurash - Afina - 2004 oltin
+                    </p>
+                </div>
+                <div class="swiper-slide">
+                    
+                    <h3 class="swiper-slide__h3">
+                        Fazliddin G‘oyibnazarov
+                    </h3>
+
+                    <p class="swiper-slide__p">
+                        Boks - Lillehammer - 2000 oltin
+                    </p>
+                </div>
+                <div class="swiper-slide">
+                    
+                    <h3 class="swiper-slide__h3">
+                        Bektemir Melqo‘ziyev
+                    </h3>
+
+                    <p class="swiper-slide__p">
+                        Karate - Istanbul - 2004 oltin
+                    </p>
+                </div>
+
+            </div>
+            
+            <div class="swiper-pagination">
+
+            </div>
+
+            
+
+
+
+
+        </div>
+    </section>
+
+
+    <section class="section10">
+        <div class="section10-inner container">
+            <div class="section10-inner-left">
+                <h2 class="section10-inner-left__info">
+                    BIZNI IJTIMOIY TARMOQLARDA HAM
+                    KUZATING VA OBUNA BO‘LING
+                </h2>
+            </div>
+
+            <div class="section10-inner-right">
+                <a href="#" class="section10-inner-right-items sotcial-links">
+                    <svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M24 2.3085C23.1075 2.7 22.1565 2.9595 21.165 3.0855C22.185 2.4765 22.9635 1.5195 23.3295 0.366C22.3785 0.933 21.3285 1.3335 20.2095 1.557C19.3065 0.5955 18.0195 0 16.6155 0C13.8915 0 11.6985 2.211 11.6985 4.9215C11.6985 5.3115 11.7315 5.6865 11.8125 6.0435C7.722 5.844 4.1025 3.8835 1.671 0.897C1.2465 1.6335 0.9975 2.4765 0.9975 3.384C0.9975 5.088 1.875 6.5985 3.183 7.473C2.3925 7.458 1.617 7.2285 0.96 6.867C0.96 6.882 0.96 6.9015 0.96 6.921C0.96 9.312 2.6655 11.298 4.902 11.7555C4.5015 11.865 4.065 11.9175 3.612 11.9175C3.297 11.9175 2.979 11.8995 2.6805 11.8335C3.318 13.782 5.127 15.2145 7.278 15.261C5.604 16.5705 3.4785 17.3595 1.1775 17.3595C0.774 17.3595 0.387 17.3415 0 17.292C2.1795 18.6975 4.7625 19.5 7.548 19.5C16.602 19.5 21.552 12 21.552 5.499C21.552 5.2815 21.5445 5.0715 21.534 4.863C22.5105 4.17 23.331 3.3045 24 2.3085Z"
+                             />
+                    </svg>
+                </a>
+
+                <a href="#" class="section10-inner-right-items sotcial-links">
+                    <svg width="12" height="24" viewBox="0 0 12 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12 8.25H7.5V5.25C7.5 4.422 8.172 3.75 9 3.75H10.5V0H7.5C5.0145 0 3 2.0145 3 4.5V8.25H0V12H3V24H7.5V12H10.5L12 8.25Z"
+                             />
+                    </svg>
+                </a>
+
+                <a href="#" class="section10-inner-right-items sotcial-links">
+                    <svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M18.384 19.7791C18.706 20.0071 19.121 20.0641 19.491 19.9241C19.861 19.7831 20.133 19.4671 20.215 19.0841C21.084 15.0001 23.192 4.66315 23.983 0.948148C24.043 0.668148 23.943 0.377148 23.723 0.190148C23.503 0.00314829 23.198 -0.0508518 22.926 0.0501482C18.733 1.60215 5.82003 6.44715 0.542032 8.40015C0.207032 8.52415 -0.0109684 8.84615 3.16428e-05 9.19915C0.0120316 9.55315 0.250032 9.86015 0.593032 9.96315C2.96003 10.6711 6.06703 11.6561 6.06703 11.6561C6.06703 11.6561 7.51903 16.0411 8.27603 18.2711C8.37103 18.5511 8.59003 18.7711 8.87903 18.8471C9.16703 18.9221 9.47503 18.8431 9.69003 18.6401C10.906 17.4921 12.786 15.7171 12.786 15.7171C12.786 15.7171 16.358 18.3361 18.384 19.7791ZM7.37403 11.1021L9.05303 16.6401L9.42603 13.1331C9.42603 13.1331 15.913 7.28215 19.611 3.94715C19.719 3.84915 19.734 3.68515 19.644 3.57015C19.555 3.45515 19.391 3.42815 19.268 3.50615C14.982 6.24315 7.37403 11.1021 7.37403 11.1021Z"
+                             />
+                    </svg>
+
+                </a>
+
+                <a href="#" class="section10-inner-right-items sotcial-links">
+                    <svg width="12" height="24" viewBox="0 0 12 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12 8.25H7.5V5.25C7.5 4.422 8.172 3.75 9 3.75H10.5V0H7.5C5.0145 0 3 2.0145 3 4.5V8.25H0V12H3V24H7.5V12H10.5L12 8.25Z"
+                             />
+                    </svg>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="footer-inner container">
+            <div class="footer-inner-line1">
+                <div class="footer-inner-line1-column">
+                    <a href="#" class="footer-inner-line1-column__logo">
+                        <svg width="71" height="56" viewBox="0 0 71 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M37.5439 0.0737133C38.4729 -0.055975 39.4482 -0.0361249 40.3322 0.309269C41.8448 0.895513 43.0676 2.23607 43.4302 3.82806C43.7028 5.15934 43.5387 6.62165 42.7605 7.76105C41.6555 9.54492 39.3463 10.4382 37.3203 9.91943C35.6131 9.48802 34.1495 8.13688 33.6943 6.41918C33.0697 4.38783 33.9378 2.00713 35.715 0.847874C36.2788 0.498509 36.8836 0.186198 37.5439 0.0737133Z"
+                                fill="#64B431" />
+                            <path
+                                d="M24.4665 3.60971C24.7431 3.44072 25.0938 3.60707 25.3598 3.78175C26.5614 4.47254 27.5235 5.49284 28.5014 6.45756C29.92 7.86428 31.1891 9.41128 32.5906 10.8352C34.0648 12.1533 36.0366 12.938 38.0229 12.8957C40.2964 12.9076 42.4694 12.1136 44.5364 11.2388C47.6278 9.91415 50.5458 8.16865 53.7721 7.17085C54.3808 7.03851 55.114 6.74909 55.6671 7.23305C55.908 7.5431 55.6526 8.12498 55.3522 8.44391C54.4192 9.492 53.3936 10.4594 52.2847 11.3196C50.3221 12.8242 48.5634 14.5697 46.8033 16.302C45.3847 17.796 43.8589 19.2199 42.7208 20.9509C42.0525 22.2173 42.4813 23.7008 42.7684 25.0149C43.8404 29.0405 45.4575 32.9153 46.2687 37.0111C46.4751 38.1425 46.6829 39.2938 46.5598 40.4478C46.5347 40.6873 46.3905 41.0288 46.0953 40.9811C45.5964 40.9441 45.2682 40.4994 44.944 40.1686C43.9595 39.0424 43.2713 37.7058 42.4416 36.4698C41.1037 34.4239 39.861 32.2999 38.2611 30.4406C37.9475 30.0701 37.5783 29.73 37.1349 29.5249C36.7326 29.3184 36.2801 29.558 35.9704 29.82C35.0652 30.6338 34.5002 31.7309 33.8398 32.7353C33.0829 33.8827 32.4066 35.079 31.6748 36.2409C30.6664 37.7415 29.8354 39.3468 28.9434 40.9163C28.5213 41.6467 27.898 42.3203 27.0801 42.5956C26.662 42.7451 26.1406 42.6869 25.8441 42.3296C25.4021 41.8942 25.4683 41.2153 25.5464 40.6556C25.7409 39.7689 26.0717 38.9193 26.3377 38.0539C27.8265 33.3917 29.3722 28.6912 29.8314 23.7921C29.9399 22.7136 29.92 21.6271 29.887 20.5459C29.7096 18.504 29.0149 16.5534 28.2659 14.661C27.5155 12.8229 26.6911 11.0165 25.864 9.21145C25.2579 7.7915 24.5512 6.37816 24.3474 4.82852C24.2892 4.41828 24.19 3.77871 24.4665 3.60971Z"
+                                fill="#64B431" />
+                            <path
+                                d="M25.4498 44.7977C31.2288 43.9494 37.1204 43.9256 42.9167 44.6336C45.6639 45.0041 48.4059 45.4845 51.0778 46.2282C51.0381 47.046 50.9018 47.8572 50.9256 48.679C48.877 48.2212 46.8391 47.7024 44.7614 47.3901C38.5853 46.3738 32.2584 46.338 26.0598 47.1757C25.8415 46.387 25.6086 45.5996 25.4498 44.7977Z"
+                                fill="#64B431" />
+                            <path
+                                d="M17.4753 46.3923C17.7995 46.305 18.1304 46.2402 18.4652 46.2097C18.8555 46.9283 19.3227 47.6072 19.6416 48.3628C13.8731 49.8092 8.20656 51.834 3.05211 54.8313C2.48307 55.1609 1.6348 55.0206 1.33176 54.396C1.00092 53.8825 1.18751 53.1692 1.66789 52.8212C2.10459 52.5022 2.58497 52.2482 3.05741 51.9861C7.61634 49.5525 12.4863 47.7276 17.4753 46.3923Z"
+                                fill="#64B431" />
+                            <path
+                                d="M56.9164 48.0596C58.5349 48.5611 60.0792 49.281 61.6381 49.944C63.8508 50.9418 66.0092 52.0614 68.1146 53.2709C68.6095 53.5581 69.2394 53.8175 69.4022 54.4275C69.606 55.0614 69.1825 55.7734 68.5487 55.9401C68.0074 56.1519 67.5045 55.7509 67.0453 55.518C65.0537 54.3177 62.9588 53.2987 60.86 52.3022C59.0788 51.4659 57.2221 50.8095 55.4052 50.0605C55.9504 49.4266 56.4506 48.7543 56.9164 48.0596Z"
+                                fill="#64B431" />
+                            <path
+                                d="M13.324 15.2486C14.5177 15.0845 15.7801 15.4736 16.6085 16.3629C18.0364 17.7219 18.0907 20.1913 16.7872 21.651C15.5896 23.0709 13.3333 23.4004 11.7744 22.3947C10.8096 21.8111 10.1744 20.7709 9.98651 19.6699C9.6345 17.6174 11.2106 15.4167 13.324 15.2486Z"
+                                fill="#019FE3" />
+                            <path
+                                d="M22.4988 19.1273C23.0943 18.6006 23.658 17.9905 24.4136 17.698C24.6163 17.6196 24.8755 17.6005 24.9681 17.7748C25.2063 18.1299 24.714 19.8591 24.325 20.8251C23.2782 23.3037 22.0329 25.7043 21.1926 28.2663C20.7361 29.636 20.4661 31.0837 20.5429 32.5315C20.7506 37.4318 22.4763 42.0794 23.9372 46.7098C24.0735 47.2286 24.1715 47.8334 23.8843 48.3203C23.5892 48.7941 22.8891 48.7015 22.4577 48.4818C21.4229 47.9022 21.0338 46.7098 20.4582 45.7451C19.2446 43.7019 18.0139 41.6679 16.721 39.6736C16.3796 39.1945 16.0699 38.6533 15.5551 38.341C15.2322 38.198 14.8075 38.1875 14.5203 38.419C13.8798 38.8835 13.4391 39.5545 12.972 40.1804C11.5652 42.1112 10.3928 44.1981 9.04426 46.1673C8.63138 46.6609 7.87046 47.5744 7.50124 47.353C7.14261 47.1112 7.23392 46.5735 7.29083 46.1633C7.66004 42.0186 9.48362 38.2086 10.455 34.2015C10.6548 33.2262 10.889 32.0696 10.2234 31.2161C9.02971 29.5698 7.56609 28.1406 6.11569 26.7246C5.01334 25.6606 3.866 24.6403 2.66175 23.6915C1.77908 22.9517 0.852733 22.2265 0.188412 21.2724C0.0243162 21.058 -0.0696406 20.7766 0.0626918 20.5207C0.261194 20.2472 1.26429 20.3805 1.83333 20.5591C2.86819 20.8886 3.84747 21.3624 4.84131 21.7951C7.42316 22.9795 9.94282 24.4551 12.7788 24.9394C14.5481 25.2729 16.4603 24.8852 17.9213 23.8199C18.718 23.2535 19.3002 22.4555 19.9659 21.7515C20.8102 20.8767 21.5856 19.9345 22.4988 19.1273Z"
+                                fill="#019FE3" />
+                            <path
+                                d="M58.9783 16.9821C59.7683 16.9199 60.602 16.9159 61.3179 17.309C62.6082 17.9018 63.4829 19.2556 63.5068 20.6742C63.6669 22.7889 61.7255 24.8269 59.591 24.6787C58.4555 24.7435 57.3704 24.1493 56.6386 23.3117C55.4436 21.938 55.429 19.6963 56.628 18.32C57.2288 17.6332 58.0532 17.08 58.9783 16.9821Z"
+                                fill="#F99D04" />
+                            <path
+                                d="M69.6868 19.5877C69.9316 19.4302 70.3987 19.2546 70.5112 19.4712C70.6865 19.8088 70.4755 21.2194 70.1394 22.0253C69.0767 24.6455 67.7626 27.1625 66.8442 29.841C66.4551 31.0068 66.1243 32.219 66.1481 33.459C66.16 34.3258 66.1098 35.1979 66.25 36.0581C66.7886 40.0493 68.0564 43.8897 69.3109 47.7009C69.5518 48.4023 69.7212 49.1592 69.5611 49.8977C69.3705 50.2563 68.9219 50.5871 68.509 50.3899C67.7944 50.1782 67.2531 49.6039 66.8852 48.9779C65.8795 47.0975 64.7388 45.2964 63.6311 43.4768C62.8874 42.3678 62.2972 41.1344 61.3298 40.1949C61.0863 39.9011 60.6629 39.9368 60.3333 40.0241C59.8252 40.2875 59.4692 40.7507 59.1211 41.1887C58.7281 41.6876 58.306 42.1653 57.9659 42.7026C57.3452 43.7388 56.6624 44.7366 56.0325 45.7675C55.3377 46.8248 54.7528 47.9894 53.796 48.8429C53.5975 49.0467 53.1788 49.1401 53.0457 49.0362C52.7982 48.8429 52.8921 48 52.9318 47.4799C53.2428 44.5037 54.3386 41.6969 55.2001 38.8517C55.691 37.2729 56.3315 35.673 56.219 33.9883C56.2124 33.3148 55.7162 32.7987 55.3284 32.2984C54.2459 30.9155 52.9583 29.7139 51.7197 28.474C50.7682 27.5714 49.822 26.661 48.7871 25.8537C47.7681 25.0359 46.7756 24.1744 45.9181 23.1858C45.6839 22.9357 45.5198 22.4968 45.6058 22.2688C45.8506 21.8351 47.2666 22.196 48.0302 22.4858C49.245 22.8616 50.3487 23.5048 51.496 24.0394C53.7761 25.0875 56.0285 26.3434 58.5508 26.6954C60.598 27.0368 62.8093 26.395 64.2796 24.9128C65.1437 23.9706 65.951 22.9768 66.8654 22.0822C67.7626 21.2074 68.595 20.2308 69.6868 19.5877Z"
+                                fill="#F99D04" />
+                        </svg>
+
+                        <h3 class="header-inner-items-logo__name">
+                            Sport Bolalar <br>
+                            Nigohida
+                        </h3>
+                    </a>
+                    </div>
+
+                    <p class="footer-inner-line1-column__info">
+                        Portalda eʼlon qilingan materiallardan nusxa koʻchirish, tarqatish va boshqa shakllarda
+                        foydalanish faqat tahririyat yozma roziligi bilan amalga oshirilishi mumkin.
+                    </p>
+                </div>
+                <div class="footer-inner-line1-column">
+                    <span class="footer-inner-line1-column__span">
+                        Bo‘limlar
+                    </span>
+                    <a href="#" class="footer-inner-line1-column__links margin">O‘yinlar</a>
+                    <a href="#" class="footer-inner-line1-column__links">Infografika</a>
+                    <a href="#" class="footer-inner-line1-column__links">Ota-onalar uchun</a>
+                    <a href="#" class="footer-inner-line1-column__links">Videoblog</a>
+                    <a href="#" class="footer-inner-line1-column__links">Reyting</a>
+                </div>
+                <div class="footer-inner-line1-column">
+                    <span class="footer-inner-line1-column__span">
+                        O‘yin va sinovlar
+                    </span>
+                    <a href="#" class="footer-inner-line1-column__links margin">10 bosqichdan iborat sport test</a>
+                    <a href="#" class="footer-inner-line1-column__links">O‘ylab toping</a>
+                    <a href="#" class="footer-inner-line1-column__links">Ha yoki yo‘q</a>
+                    <a href="#" class="footer-inner-line1-column__links">Sport lug‘ati</a>
+
+                </div>
+                <div class="footer-inner-line1-column">
+                    <span class="footer-inner-line1-column__span">
+                        Foydali sahifalar
+                    </span>
+                    <a href="#" class="footer-inner-line1-column__links margin">Reyting</a>
+                    <a href="#" class="footer-inner-line1-column__links">Bog‘lanish</a>
+                    <a href="#" class="footer-inner-line1-column__links">F.A.Q</a>
+                    <a href="#" class="footer-inner-line1-column__links">Foydalanish shartlari</a>
+
+                </div>
+            </div>
+
+            <div class="footer-inner-line2 container">
+                <p class="footer-inner-line2-column copyright">
+                    Sport Bolalar Nigohida © 2020. Barcha huquqlar himoyalangan.
+                </p>
+                <a href="#" class="footer-inner-line2-column footer-button">
+                    Designed and developed by <span>UIC</span> Development
+                </a>
+
+                <div class="footer-inner-line2-column">
+                    <span class="footer-inner-line2-column__info">
+                        Biz ijtimoiy tarmoqlarda
+                    </span>
+                    <div class="footer-inner-line2-column-sotcial">
+                        <a href="#" class="footer-inner-line2-column-sotcial__links sotcial-links">
+                            <svg width="24" height="20" viewBox="0 0 24 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M24 2.3085C23.1075 2.7 22.1565 2.9595 21.165 3.0855C22.185 2.4765 22.9635 1.5195 23.3295 0.366C22.3785 0.933 21.3285 1.3335 20.2095 1.557C19.3065 0.5955 18.0195 0 16.6155 0C13.8915 0 11.6985 2.211 11.6985 4.9215C11.6985 5.3115 11.7315 5.6865 11.8125 6.0435C7.722 5.844 4.1025 3.8835 1.671 0.897C1.2465 1.6335 0.9975 2.4765 0.9975 3.384C0.9975 5.088 1.875 6.5985 3.183 7.473C2.3925 7.458 1.617 7.2285 0.96 6.867C0.96 6.882 0.96 6.9015 0.96 6.921C0.96 9.312 2.6655 11.298 4.902 11.7555C4.5015 11.865 4.065 11.9175 3.612 11.9175C3.297 11.9175 2.979 11.8995 2.6805 11.8335C3.318 13.782 5.127 15.2145 7.278 15.261C5.604 16.5705 3.4785 17.3595 1.1775 17.3595C0.774 17.3595 0.387 17.3415 0 17.292C2.1795 18.6975 4.7625 19.5 7.548 19.5C16.602 19.5 21.552 12 21.552 5.499C21.552 5.2815 21.5445 5.0715 21.534 4.863C22.5105 4.17 23.331 3.3045 24 2.3085Z"
+                                     />
+                            </svg>
+
+                        </a>
+                        <a href="#" class="footer-inner-line2-column-sotcial__links sotcial-links">
+                            <svg width="12" height="24" viewBox="0 0 12 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12 8.25H7.5V5.25C7.5 4.422 8.172 3.75 9 3.75H10.5V0H7.5C5.0145 0 3 2.0145 3 4.5V8.25H0V12H3V24H7.5V12H10.5L12 8.25Z"
+                                    />
+                            </svg>
+
+                        </a>
+                        <a href="#" class="footer-inner-line2-column-sotcial__links sotcial-links">
+                            <svg width="24" height="20" viewBox="0 0 24 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M18.384 19.7791C18.706 20.0071 19.121 20.0641 19.491 19.9241C19.861 19.7831 20.133 19.4671 20.215 19.0841C21.084 15.0001 23.192 4.66315 23.983 0.948148C24.043 0.668148 23.943 0.377148 23.723 0.190148C23.503 0.00314829 23.198 -0.0508518 22.926 0.0501482C18.733 1.60215 5.82003 6.44715 0.542032 8.40015C0.207032 8.52415 -0.0109684 8.84615 3.16428e-05 9.19915C0.0120316 9.55315 0.250032 9.86015 0.593032 9.96315C2.96003 10.6711 6.06703 11.6561 6.06703 11.6561C6.06703 11.6561 7.51903 16.0411 8.27603 18.2711C8.37103 18.5511 8.59003 18.7711 8.87903 18.8471C9.16703 18.9221 9.47503 18.8431 9.69003 18.6401C10.906 17.4921 12.786 15.7171 12.786 15.7171C12.786 15.7171 16.358 18.3361 18.384 19.7791ZM7.37403 11.1021L9.05303 16.6401L9.42603 13.1331C9.42603 13.1331 15.913 7.28215 19.611 3.94715C19.719 3.84915 19.734 3.68515 19.644 3.57015C19.555 3.45515 19.391 3.42815 19.268 3.50615C14.982 6.24315 7.37403 11.1021 7.37403 11.1021Z"
+                                     />
+                            </svg>
+
+                        </a>
+                        <a href="#" class="footer-inner-line2-column-sotcial__links sotcial-links">
+                            <svg width="12" height="24" viewBox="0 0 12 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12 8.25H7.5V5.25C7.5 4.422 8.172 3.75 9 3.75H10.5V0H7.5C5.0145 0 3 2.0145 3 4.5V8.25H0V12H3V24H7.5V12H10.5L12 8.25Z"
+                                     />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    -->
+
+    <script src="./libs/swiper-bundle.min.js"></script>
+    <script src="./scripts/main.js"></script>
+</body>
+
+</html>
+
